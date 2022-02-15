@@ -1,0 +1,87 @@
+{
+  "estados": [
+    "q0",
+    "q1",
+    "q2",
+    "q3",
+    "qf"
+  ],
+  "alfabeto": "ab",
+  "alfabetoFita": "abxy$",
+  "regras": [
+    {
+      "estadoPartida": "q0",
+      "simbolo": "a",
+      "colocado": "x",
+      "estadosDestino": "q1",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q1",
+      "simbolo": "a",
+      "colocado": "a",
+      "estadosDestino": "q1",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q1",
+      "simbolo": "y",
+      "colocado": "y",
+      "estadosDestino": "q1",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q1",
+      "simbolo": "b",
+      "colocado": "y",
+      "estadosDestino": "q2",
+      "dir": "L"
+    },
+    {
+      "estadoPartida": "q2",
+      "simbolo": "y",
+      "colocado": "y",
+      "estadosDestino": "q2",
+      "dir": "L"
+    },
+    {
+      "estadoPartida": "q2",
+      "simbolo": "a",
+      "colocado": "a",
+      "estadosDestino": "q2",
+      "dir": "L"
+    },
+    {
+      "estadoPartida": "q2",
+      "simbolo": "x",
+      "colocado": "x",
+      "estadosDestino": "q0",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q0",
+      "simbolo": "y",
+      "colocado": "y",
+      "estadosDestino": "q3",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q3",
+      "simbolo": "y",
+      "colocado": "y",
+      "estadosDestino": "q3",
+      "dir": "R"
+    },
+    {
+      "estadoPartida": "q3",
+      "simbolo": "$",
+      "colocado": "$",
+      "estadosDestino": "qf",
+      "dir": "R"
+    }
+  ],
+  "estadoInicial": "q0",
+  "estadosFinais": [
+    "qf"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "estados": ["q0", "q1", "qf"],
+  "alfabeto": "01",
+  "alfabetoFita" : "01$",
+  "regras": [
+    {
+      "estadoPartida": "q0",
+      "simbolo": "0",
+      "colocado": "1",
+      "estadosDestino": "q1",
+      "dir": "R"
+    },{
+      "estadoPartida": "q1",
+      "simbolo": "1",
+      "colocado": "0",
+      "estadosDestino": "q0",
+      "dir": "R"
+    },{
+      "estadoPartida": "q1",
+      "simbolo": "$",
+      "colocado": "$",
+      "estadosDestino": "qf",
+      "dir": "R"
+    }
+  ],
+  "estadoInicial": "q0",
+  "estadosFinais": ["qf"]
+}
