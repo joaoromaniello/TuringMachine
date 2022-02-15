@@ -28,11 +28,11 @@ In case you wanna test your own machine, just insert it using the following JSON
   "alfabetoFita" : "a string with all the stack alphabet characters", 
   "regras": [  "All rules"
     {
-      "estadoPartida": "q0", 
-      "simbolo": "_",
-      "colocado": "Z", 
-      "estadosDestino": "q0", 
-      "empilha": "_"  
+      "estadoPartida": "q0", //First state
+      "simbolo": "_",  //Symbol read on tape
+      "colocado": "Z", //What will be written on the tape
+      "estadosDestino": "q0", //Next state
+      "dir": "R"  //The instruction you have to make on the tape (R or L)
     },  
     .  
     . 
